@@ -1,10 +1,14 @@
-body{
+.Page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* height: 700px;
+    margin-top: -200px; */
     background-image: url('https://foodtank.com/wp-content/uploads/2022/02/irewolede-PvwdlXqo85k-unsplash.jpg');
 }
 .loginBox{
-    margin-top: 15%;
-    margin-left: 35%;
-    margin-right: 35%;
+    width: 20%;
     border-radius: 10%;
     background-color: rgba(0, 255, 255, 0.9);
     padding: 5%;
