@@ -76,7 +76,7 @@ function Login(){
             <h4>Login to Bigha</h4>
             </center>
             <form className='form' method='POST'>
-                <p>&nbsp;&nbsp;Enter mobile number</p>
+                <p>&nbsp;&nbsp;Enter mobile </p>
                 <input type='mobile' name='userNumber' value={userData.userNumber} onChange={postUserData}/>
                 <p>&nbsp;&nbsp;Enter Password</p>
                 <input type='password'name='userPass' value={userData.userPass} onChange={postUserData}/> 
