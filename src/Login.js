@@ -10,7 +10,16 @@ let name,value;
 
 
 function Login(){
+    
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (isLoggedIn) {
+          navigate('/home');
+        }
+      }, [isLoggedIn, navigate]);
 
     const [userData,setUserData] = useState({
         userNumber: "",
@@ -40,6 +49,7 @@ function Login(){
                     userNumber: '',
                     userPass: '',
                   });
+                  localStorage.setItem('isLoggedIn','true');
                  navigate('/Home');
                 
               //  alert('Login successful');
