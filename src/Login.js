@@ -80,7 +80,7 @@ function Login(){
                 <input type='mobile' name='userNumber' value={userData.userNumber} onChange={postUserData}/>
                 <p>&nbsp;&nbsp;Enter Password</p>
                 <input type='password'name='userPass' value={userData.userPass} onChange={postUserData}/> 
-                <input style={{margin:'10% 30%' , backgroundColor:'beige' }} type='submit' onClick={submitData}/>
+                <input style={{margin:'10% 0% 20% 20%' , backgroundColor:'beige', width:'60%' }} type='submit' onClick={submitData}/>
             </form>
         </div>
         </div>
