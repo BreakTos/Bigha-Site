@@ -13,9 +13,19 @@ function Home(){
         }
       }, [isLoggedIn, navigate]);
     return(
-        <>
-        You are in home
-        </>
+        <div className='page'>
+          <div className='Microfinances'>
+            <h3>Microfinances</h3>
+            <p>Invest in agriculture with as little finance you wish</p>
+          
+          </div>
+          <div className='Microfinances'>
+          <h3>Marketplace</h3>
+          </div>
+          <div className='Microfinances'>
+          <h3>Agrotourism</h3>
+          </div>
+        </div>
     )
 }
 
