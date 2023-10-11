@@ -55,21 +55,23 @@ const CropInfo = () => {
 
   return (
     <div className='page'>
-      <div>
-        
-      <center> <h1 className='heading'>Crop Information</h1></center>
-        <ul>
-          {cropData.map((crop, index) => (
-            <li key={index}>
-              <p>Mobile Number: {crop.mobileNumber}</p>
+    <div>
+      <center><h1>Crop Information</h1></center>
+      <div className="row">
+        {cropData.map((crop, index) => (
+          <ul key={index} className="crop-list" style={{listStyle:'none'}}>
+            <li>
               <p>Crop Price: {crop.cropPrice}</p>
               <p>Crop Weight: {crop.cropWeight}</p>
               <p>Crop Name: {crop.cropName}</p>
+              <hr/>
+              <p>Mobile Number: {crop.mobileNumber}</p>
             </li>
-          ))}
-        </ul>
+          </ul>
+        ))}
       </div>
     </div>
+  </div>
   );
 };
 
