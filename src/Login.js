@@ -29,7 +29,6 @@ function Login(){
     function postUserData(event){
         name=event.target.name;
         value=event.target.value;
-    
         setUserData({...userData,[name]:value});
     }
     

@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
 import Home from './Home.js';
 import Login from './Login.js';
+import Microfinances from './Microfinances';
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
 
         <Route path='/' element={isLoggedIn ? <Home /> : <Login />} />
         <Route path='/home' element={<Home />} />
+        <Route path='/microfinances' element={<Microfinances/>}/>
       </Routes>
     </BrowserRouter>
   );
