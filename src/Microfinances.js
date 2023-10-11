@@ -56,7 +56,8 @@ const CropInfo = () => {
   return (
     <div className='page'>
       <div>
-        <h1>Crop Information</h1>
+        
+      <center> <h1 className='heading'>Crop Information</h1></center>
         <ul>
           {cropData.map((crop, index) => (
             <li key={index}>
