@@ -2,6 +2,7 @@ import './Home.css';
 import React,{useState,useEffect} from 'react';
 import { redirect, useNavigate } from 'react-router-dom';
 
+
 function Home(){
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
     
@@ -13,6 +14,11 @@ function Home(){
         }
       }, [isLoggedIn, navigate]);
 
+       function logout() {
+        console.log("hi");
+        localStorage.setItem('isLoggedIn', 'false');
+        navigate('/'); // Redirect to the login page after logout.
+      }
 
       function redirectMicro(){
         navigate('/microfinances');
@@ -20,7 +26,13 @@ function Home(){
       }
 
     return(
+      <>      
         <div className='page'>
+          <div>
+      <button onClick={logout} >
+        Logout
+      </button>
+          </div>
           <div className='Microfinances'>
             <h3>Microfinances</h3>
             <div className='hr'></div>
@@ -33,7 +45,10 @@ function Home(){
           <div className='Microfinances'>
           <h3>Agrotourism</h3>
           </div>
+          
         </div>
+        </>
+
     )
 }
 
